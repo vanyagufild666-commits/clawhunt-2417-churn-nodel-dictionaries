@@ -1,0 +1,21 @@
+{
+  "churn": [
+    {"code": "CHURN_PRICE", "name": "价格", "definition": "会员因租金、服务费或续约报价高于其预期或承受能力而决定不再续约", "supplement": true, "action": "记录会员报价预期，转交会员运营/续约团队评估是否可提供弹性方案或折扣审批"},
+    {"code": "CHURN_SPACE", "name": "空间不满足", "definition": "现有工位、办公室面积、楼层或设施配置无法满足会员业务发展的空间需求", "supplement": true, "action": "登记具体空间需求（面积、楼层、配置），查询其他会所可满足的单元并推荐调换或升级方案"},
+    {"code": "CHURN_RELOCATE", "name": "搬迁", "definition": "会员企业办公地址整体迁往其他城市、区域，物理上无法继续使用本平台空间", "supplement": false, "action": "记录新办公城市，介绍平台异地合作空间资源，保留远程会员权益方案"},
+    {"code": "CHURN_SHRINK", "name": "业务收缩", "definition": "会员企业因经营调整、裁员或预算削减而缩小办公规模，退租部分或全部工位", "supplement": false, "action": "推荐按需计费的灵活工位或共享工位方案，降低退租概率"},
+    {"code": "CHURN_SERVICE", "name": "服务不满意", "definition": "会员对物业、保洁、网络、前台或运营服务体验不满，多次反馈未改善后决定退出", "supplement": true, "action": "生成服务投诉工单，由运营主管 48 小时内回访并给出整改计划"},
+    {"code": "CHURN_RESOURCE", "name": "资源对接未达预期", "definition": "会员购买会员资格的核心诉求为资源对接与商机撮合，实际对接数量或质量低于承诺预期", "supplement": true, "action": "由商机经理复盘对接记录，调整撮合策略并给出未来三个月对接计划"},
+    {"code": "CHURN_COMPETITOR", "name": "被竞品吸引", "definition": "会员选择其他联合办公品牌或商务中心，通常因价格、位置或配套更优", "supplement": true, "action": "记录竞品名称与报价，提交市场团队进入竞品分析与挽回名单"},
+    {"code": "CHURN_OTHER", "name": "其他", "definition": "无法归入上述任一标准化类别的退租原因", "supplement": true, "action": "必填补充说明，运营专员每周汇总一次并评估是否新增标准类别"}
+  ],
+  "nodel": [
+    {"code": "NODEL_BUDGET", "name": "预算不足", "definition": "意向会员认可空间方案，但当前预算无法覆盖报价，未进入签约流程", "supplement": true, "action": "记录预算区间，转交招商顾问加入低价档位跟进名单，三个月后回访"},
+    {"code": "NODEL_LOCATION", "name": "位置不合适", "definition": "会所位置与意向会员的客户、员工通勤或业务半径不匹配", "supplement": true, "action": "记录期望区位，推荐同城市其他会所或留作新选址评估输入"},
+    {"code": "NODEL_AREA", "name": "面积不合适", "definition": "意向会员需要的工位数量或面积与会所可提供的单元不匹配", "supplement": true, "action": "登记面积需求，与空间运营核对可拆分或合并单元的可能性"},
+    {"code": "NODEL_DELAY", "name": "决策推迟", "definition": "意向会员内部决策流程未完成或暂缓办公扩张计划，签约搁置", "supplement": false, "action": "设定 30 天回访提醒，期间推送案例与活动邀请保持触达"},
+    {"code": "NODEL_COMPETITOR", "name": "选择其他空间", "definition": "意向会员最终签约其他联合办公品牌、传统写字楼或自租场地", "supplement": true, "action": "记录竞品与成交价格，提交市场团队用于报价策略复盘"},
+    {"code": "NODEL_UNREACHABLE", "name": "联系不上", "definition": "多次电话、即时消息与邮件触达均无回应，意向线索失联", "supplement": false, "action": "转入公海，按公海冷却规则 90 天后允许其他顾问重新领取"},
+    {"code": "NODEL_OTHER", "name": "其他", "definition": "无法归入上述任一标准化类别的未成交原因", "supplement": true, "action": "必填补充说明，招商主管每周汇总一次并评估是否新增标准类别"}
+  ]
+}
